@@ -1,9 +1,69 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+:root {
+    --primary-color: #4fe5cd;
   }
-.img-mainlogo{
-    width: 100%;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*header */
+.img-mainlogo {
+  width: 100%;
+  position: relative;
+}
+body {
+  font-family: Helvetica;
+  -webkit-font-smoothing: antialiased;
+  background-color: #dee1d6;
+  color: #404040;
+}
+
+h1 {
+  color: #252420;
+  text-align: center;
+  margin-bottom: 25px;
+
+  font-family: monospace;
+  font-size: 35px;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+/*tabs*/
+.tabs {
+  padding-top: 1rem;
+  border-bottom: 3px solid;
+}
+.tabs .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.tabs p{
+    font-size:  1.2rem;
+    padding-top: 0.5rem;
+}
+.tabs .container > div {
+padding: 1.5rem 0;
+}
+.tabs .container > div:hover {
+    color: #2F9599;
+    cursor: pointer;
+}
+.tab-border {
+border-bottom: var(--primary-color) 4px solid;
+}
+/*container*/
+.container{
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
   
 }
